@@ -1,0 +1,30 @@
+:root {
+  --base-dark-color: 0, 0, 0;
+  --base-light-color: #fff;
+  --base-blue-color: 24, 144, 255;
+
+  --x-small-font-size: 12px;
+  --small-font-size: 14px;
+  --normal-font-size: 16px;
+  --big-font-size: 30px;
+
+  /* TEXT COLOR */
+  --text-normal-color: rgba(var(--base-dark-color), 0.8);
+  --text-light-color: rgba(var(--base-dark-color), 0.4);
+
+  /* HEADING COLOR */
+  --heading-color: rgba(var(--base-dark-color), 0.7);
+
+  /* BORDER COLOR */
+  --border-color: rgba(var(--base-dark-color), 0.2);
+
+  /* GRAY BG COLOR */
+  --gray-bg-light-color: rgba(var(--base-dark-color), 0.07);
+  --gray-bg-normal-color: rgba(var(--base-dark-color), 0.1);
+
+  /* BLUE BG COLOR */
+  /* #bfdcf7 */
+  --blue-bg-dark-color: rgba(var(--base-blue-color), 0.9);
+  --blue-bg-normal-color: rgba(var(--base-blue-color), 0.3);
+  --blue-bg-light-color: rgba(var(--base-blue-color), 0.07);
+}

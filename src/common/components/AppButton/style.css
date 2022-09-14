@@ -1,0 +1,58 @@
+.button {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  user-select: none;
+  border-radius: 2px;
+}
+
+.button--primary {
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  box-shadow: 0 2px #00000004;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  user-select: none;
+  height: 30px;
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #000000d9;
+  border-color: #d9d9d9;
+  background: #fff;
+}
+
+.button--with-icons {
+  display: flex;
+  align-items: center;
+}
+
+.button--with-icons svg {
+  fill: var(--text-light-color);
+}
+
+.button--active svg {
+  fill: var(--text-normal-color);
+}
+
+.button--sort-asc svg {
+  transform: rotate(180deg);
+}
+
+.button .button__icon {
+  color: var(--text-light-color)
+}
+
+.button--active .button__icon {
+  color: var(--text-normal-color)
+}

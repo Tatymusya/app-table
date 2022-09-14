@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <TheHeader>
+    <div class="banner">Таблица с сортировкой и фильтрацией данных</div>
+  </TheHeader>
+
+  <TheMain>
+    <ViewHome />
+  </TheMain>
 </template>
 
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
+<script lang="ts">
+import { defineComponent } from "vue";
+import TheHeader from "@/layouts/TheHeader/TheHeader";
+import TheMain from "@/layouts/TheMain/TheMain";
+import ViewHome from "@/views/ViewHome.vue";
 
-export default {
+export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    TheHeader,
+    TheMain,
+    ViewHome,
   },
-};
+});
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "~@/assets/css/app";
+.banner {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: var(--small-font-size);
+  color: var(--base-light-color);
 }
 </style>

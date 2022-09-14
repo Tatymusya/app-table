@@ -1,0 +1,40 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--small-font-size);
+  border: 1px solid var(--border-color);
+}
+
+.table th {
+  padding: 20px 10px 16px;
+  white-space: nowrap;
+  font-size: var(--x-small-font-size);
+  background-color: var(--blue-bg-light-color);
+}
+
+.table th button {
+  background-color: transparent;
+  border: none;
+}
+
+.table tr:nth-child(even) {
+  background-color: var(--gray-bg-normal-color);
+}
+
+.table td {
+  padding: 6px 10px;
+  height: 56px;
+  color: var(--text-normal-color);
+}
+
+.table col.cols-active {
+  background: var(--blue-bg-light-color);
+}
+
+.table tfoot {
+  text-align: right;
+}
+
+.table tfoot .button {
+  margin-left: 10px;
+}

@@ -1,0 +1,6 @@
+h1 {
+  margin-bottom: 20px;
+  color: var(--heading-color);
+  font-weight: 500;
+  font-size: var(--big-font-size);
+}
